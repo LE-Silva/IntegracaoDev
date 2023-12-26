@@ -123,5 +123,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IntegracaoDev.Presentation\IntegracaoDev.Presentation.csproj">
+      <Project>{714AF868-A6EA-4073-B894-C3BD5777DE62}</Project>
+      <Name>IntegracaoDev.Presentation</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

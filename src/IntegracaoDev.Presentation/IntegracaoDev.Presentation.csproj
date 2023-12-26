@@ -31,6 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="C1.Win.C1Command.4">
+      <HintPath>U:\SYMFP2024R1\Install\C1.Win.C1Command.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4">
+      <HintPath>U:\SYMFP2024R1\Install\C1.Win.C1FlexGrid.4.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4">
+      <HintPath>U:\SYMFP2024R1\Install\C1.Win.C1Input.4.dll</HintPath>
+    </Reference>
     <Reference Include="Dataplace.Core.Lib">
       <HintPath>U:\SYMFP2024R1\Install\Dataplace.Core.Lib.dll</HintPath>
     </Reference>
@@ -49,8 +58,16 @@
     <Reference Include="dp.RuntimeProcess.01">
       <HintPath>U:\SYMFP2024R1\Install\dp.RuntimeProcess.01.exe</HintPath>
     </Reference>
+    <Reference Include="IntegracaoDevApp.Application">
+      <HintPath>U:\SYMFP2024R1\Install\IntegracaoDevApp.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="IntegracaoDevApp.Domain">
+      <HintPath>U:\SYMFP2024R1\Install\IntegracaoDevApp.Domain.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,12 +79,102 @@
     <Compile Include="BootStrapper.cs" />
     <Compile Include="Common\Search\IntegracaoDevSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Clientes\ClienteWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Clientes\ClienteWindow.Designer.cs">
+      <DependentUpon>ClienteWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Clientes\IntegracaoDev_ClienteView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Clientes\IntegracaoDev_ClienteView.Designer.cs">
+      <DependentUpon>IntegracaoDev_ClienteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Clientes\PesquisaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Clientes\PesquisaCliente.Designer.cs">
+      <DependentUpon>PesquisaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pedidos\PedidoItemView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Pedidos\PedidoItemView.Designer.cs">
+      <DependentUpon>PedidoItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pedidos\PedidoRelatorio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Pedidos\PedidoRelatorio.Designer.cs">
+      <DependentUpon>PedidoRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pedidos\PedidoView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Pedidos\PedidoView.Designer.cs">
+      <DependentUpon>PedidoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pedidos\PesquisaPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Pedidos\PesquisaPedido.Designer.cs">
+      <DependentUpon>PesquisaPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pesquisa\IntegracaoDev_PesquisaView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Pesquisa\IntegracaoDev_PesquisaView.Designer.cs">
+      <DependentUpon>IntegracaoDev_PesquisaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Produtos\PesquisaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Produtos\PesquisaProduto.Designer.cs">
+      <DependentUpon>PesquisaProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Produtos\ProdutoWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Produtos\ProdutoWindow.Designer.cs">
+      <DependentUpon>ProdutoWindow.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\Clientes\" />
-    <Folder Include="Views\Pedidos\" />
-    <Folder Include="Views\Produtos\" />
     <Folder Include="Views\Relatorio\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Views\Clientes\ClienteWindow.resx">
+      <DependentUpon>ClienteWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Clientes\IntegracaoDev_ClienteView.resx">
+      <DependentUpon>IntegracaoDev_ClienteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Clientes\PesquisaCliente.resx">
+      <DependentUpon>PesquisaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Pedidos\PedidoItemView.resx">
+      <DependentUpon>PedidoItemView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Pedidos\PedidoRelatorio.resx">
+      <DependentUpon>PedidoRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Pedidos\PedidoView.resx">
+      <DependentUpon>PedidoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Pedidos\PesquisaPedido.resx">
+      <DependentUpon>PesquisaPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Pesquisa\IntegracaoDev_PesquisaView.resx">
+      <DependentUpon>IntegracaoDev_PesquisaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Produtos\PesquisaProduto.resx">
+      <DependentUpon>PesquisaProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Produtos\ProdutoWindow.resx">
+      <DependentUpon>ProdutoWindow.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegracaoDev.App", "src\IntegracaoDev.App\IntegracaoDev.App.csproj", "{7433272A-A914-4041-AC54-99C090DB0B36}"
 	ProjectSection(ProjectDependencies) = postProject
+		{714AF868-A6EA-4073-B894-C3BD5777DE62} = {714AF868-A6EA-4073-B894-C3BD5777DE62}
 		{85648320-6BBD-4641-8623-97D2E0EC7893} = {85648320-6BBD-4641-8623-97D2E0EC7893}
 	EndProjectSection
 EndProject

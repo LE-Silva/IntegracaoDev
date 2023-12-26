@@ -1,4 +1,8 @@
 ﻿using dpLibrary05;
+using IntegracaoDev.Presentation.Views.Clientes;
+using IntegracaoDevApp;
+using IntegracaoDevApp.SubViews;
+using IntegracaoDevApp.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,6 +31,25 @@ namespace IntegracaoDev.App
 
         private void LoadMenu()
         {
+            AddMenu(new ToolStripMenuItem("Cliente", null, (object sender, EventArgs e) =>
+            {
+                Dataplace.Core.win.Views.Managers.ViewManager.ShowViewOnForm<ClienteWindow>(captionForm: "Clientes");
+            }), TipoMenuEnun.Arquivo);
+
+            AddMenu(new ToolStripMenuItem("Produtos", null, (object sender, EventArgs e) =>
+            {
+                Dataplace.Core.win.Views.Managers.ViewManager.ShowViewOnForm<ProdutoWindow>(captionForm: "Clientes");
+            }), TipoMenuEnun.Arquivo);
+
+            AddMenu(new ToolStripMenuItem("Pedido", null, (object sender, EventArgs e) =>
+            {
+                Dataplace.Core.win.Views.Managers.ViewManager.ShowViewOnForm<PedidoView>(captionForm: "Clientes");
+            }), TipoMenuEnun.Arquivo);
+
+            AddMenu(new ToolStripMenuItem("Pesquisas", null, (object sender, EventArgs e) =>
+            {
+                Dataplace.Core.win.Views.Managers.ViewManager.ShowViewOnForm<IntegracaoDev_ClienteView>(captionForm: "Pesquisa");
+            }), TipoMenuEnun.Arquivo);
         }
     }
 }
