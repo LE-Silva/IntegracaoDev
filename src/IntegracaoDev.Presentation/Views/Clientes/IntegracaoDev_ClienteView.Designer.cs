@@ -50,14 +50,15 @@ namespace IntegracaoDev.Presentation.Views.Clientes
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.integracaoDev_PesquisaView1, 0, 1);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.7733F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.2267F));
+            this.tableLayoutPanel1.Controls.Add(this.integracaoDev_PesquisaView1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 146F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 170F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(794, 356);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
@@ -71,9 +72,9 @@ namespace IntegracaoDev.Presentation.Views.Clientes
             this.integracaoDev_PesquisaView1.Name = "integracaoDev_PesquisaView1";
             this.integracaoDev_PesquisaView1.OpenModal = false;
             this.integracaoDev_PesquisaView1.Parameters = ((System.Collections.Generic.IDictionary<string, object>)(resources.GetObject("integracaoDev_PesquisaView1.Parameters")));
-            this.integracaoDev_PesquisaView1.Size = new System.Drawing.Size(785, 89);
+            this.integracaoDev_PesquisaView1.Size = new System.Drawing.Size(664, 109);
             this.integracaoDev_PesquisaView1.StartPositionControl = null;
-            this.integracaoDev_PesquisaView1.TabIndex = 12;
+            this.integracaoDev_PesquisaView1.TabIndex = 5;
             this.integracaoDev_PesquisaView1.TabOrderScheme = dpLibrary05.TabOrderManager.TabScheme.None;
             // 
             // IntegracaoDev_ClienteView

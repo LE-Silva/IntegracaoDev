@@ -23,8 +23,6 @@ namespace IntegracaoDev.Presentation.Views.Clientes
         public IntegracaoDev_ClienteView()
         {
             InitializeComponent();
-
-            _clienteAppService = new ClienteAppService();
         }
     }
 }

@@ -35,11 +35,11 @@ namespace IntegracaoDev.Presentation.Common.Search
 
             //Ordenação
             se.Fields.Add(new clsSymInterfaceSearchField() { SearchIndex = 0, Name = "Código", Width = 80, IsReturnValue = true });
-            se.Fields.Add(new clsSymInterfaceSearchField() { SearchIndex = 1, Name = "Nome", Width = 300 });
-            se.Fields.Add(new clsSymInterfaceSearchField() { SearchIndex = 2, Name = "Cpf", Width = 120 });
-            se.Fields.Add(new clsSymInterfaceSearchField() { SearchIndex = 3, Name = "TpPessoa", Width = 120 });
-            se.Fields.Add(new clsSymInterfaceSearchField() { SearchIndex = 4, Name = "ClientePremium", Width = 50 });
-            se.Fields.Add(new clsSymInterfaceSearchField() { SearchIndex = 5, Name = "Ativo", Width = 50 });
+            se.Fields.Add(new clsSymInterfaceSearchField() { SearchIndex = 1, Name = "Nome", Width = 200 });
+            se.Fields.Add(new clsSymInterfaceSearchField() { SearchIndex = 2, Name = "CPF", Width = 120 });
+            se.Fields.Add(new clsSymInterfaceSearchField() { SearchIndex = 3, Name = "Tipo de Pessoa", Width = 120, VisibleEdit = false });
+            se.Fields.Add(new clsSymInterfaceSearchField() { SearchIndex = 4, Name = "Premium", Width = 50, VisibleEdit = false});
+            se.Fields.Add(new clsSymInterfaceSearchField() { SearchIndex = 5, Name = "Ativo", Width = 50, VisibleEdit = false, IsReturnValue = true });
 
             SetParameters(ref se, args);
             return se;

@@ -36,6 +36,11 @@ namespace IntegracaoDev.App
                 Dataplace.Core.win.Views.Managers.ViewManager.ShowViewOnForm<ClienteWindow>(captionForm: "Clientes");
             }), TipoMenuEnun.Arquivo);
 
+            AddMenu(new ToolStripMenuItem("Cliente Novo", null, (object sender, EventArgs e) =>
+            {
+                Dataplace.Core.win.Views.Managers.ViewManager.ShowViewOnForm<IntegracaoDev_ClienteView>(captionForm: "Clientes");
+            }), TipoMenuEnun.Arquivo);
+
             AddMenu(new ToolStripMenuItem("Produtos", null, (object sender, EventArgs e) =>
             {
                 Dataplace.Core.win.Views.Managers.ViewManager.ShowViewOnForm<ProdutoWindow>(captionForm: "Clientes");
